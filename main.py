@@ -143,9 +143,9 @@ def main():
         sys.exit(1)
 
     checkers = [
-        YamatanChecker(config),
+        # YamatanChecker(config),
         TomoekanChecker(config),
-        GoraikoukanChecker(config),
+        # GoraikoukanChecker(config),
     ]
 
     if args.once:
