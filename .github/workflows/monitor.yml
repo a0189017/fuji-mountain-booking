@@ -1,11 +1,11 @@
 name: Fuji Mountain Monitor
 
 on:
-  repository_dispatch:
-    types: [check-availability]   # triggered by cron-job.org every minute
+  # repository_dispatch:
+  #   types: [check-availability]   # triggered by cron-job.org every minute (disabled)
   workflow_dispatch:              # allow manual trigger from GitHub UI
-  schedule:
-    - cron: '*/5 * * * *'        # fallback: GitHub's own scheduler (unreliable, kept as backup)
+  # schedule:
+  #   - cron: '*/5 * * * *'        # fallback: GitHub's own scheduler (disabled)
 
 concurrency:
   group: monitor
